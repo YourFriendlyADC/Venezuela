@@ -8,24 +8,36 @@
 
 body {
   scroll-behavior: smooth;
-  background-color: #e0e1dd;
+  background-color: #e5e4ee;
 }
 
 i {
+  color: #fff080;
   font-size: 2.2em;
+  filter: drop-shadow(2px 2px 1px #3D3838);
+  margin-bottom: 5px;
 }
 
 a {
-  color: rgb(233, 233, 233);
+  color: #570808;
   text-decoration: none;
   font-size: 1em;
 }
 
+p {
+  text-align: justify;
+}
+
 header {
-  background-color: #1b263b;
+  background-color: #461220;
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 100;
+}
+
+header i {
+  color: #cbc8e6;
 }
 
 .logo {
@@ -37,6 +49,7 @@ header {
 }
 
 .logo span {
+  color: #cbc8e6;
   font-size: 2em;
   margin: 0 10px;
 }
@@ -49,21 +62,40 @@ section {
 
 .main-column {
   width: 80%;
-  background-color: #92a8c5;
+  background-color: #cbc8e6;
   margin: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.2em;
-  box-shadow: 0 0 5px #1b263b;
-  color: #082a57;
+  padding: 2em;
+  box-shadow: 0 0 5px #3D3838;
+  color: #570808;
+  border-radius: 0.5em;
+}
+
+.music-image {
+  width: 320px;
+  border-radius: 0.5em;
+  margin-bottom: 0.75em;
+}
+
+.food-image {
+  display: flex;
+  flex-direction: row;
+}
+
+.food-image img {
+  width: 300px;
+  margin: 0.625em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 5px #3D3838;
 }
 
 .image {
   width: 316px;
   height: 448px;
-  box-shadow: 0 0 6px #1b263b;
+  box-shadow: 0 0 6px #3D3838;
   margin: 1em;
 }
 
@@ -72,16 +104,20 @@ section {
 }
 
 .sidebar {
-  width: 20%;
-  background-color: #5a718b;
+  width: 15%;
+  background-color: #cbc8e6;
   margin: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  box-shadow: 0 0 5px #1b263b;
-  color: #e0e1dd;
+  box-shadow: 0 0 5px #3D3838;
+  color: #570808;
+  position: fixed;
+  left: 82%;
+  height: 65vh;
+  border-radius: 0.5em;
 }
 
 .sidebar h2 {
@@ -90,6 +126,8 @@ section {
 }
 
 .sidebar h2 i {
+  color: #570808;
+  filter: none;
   font-size: 0.75em;
   margin-right: 0.3em;
 }
@@ -99,7 +137,7 @@ section {
 }
 
 footer {
-  background-color: #1b263b;
+  background-color: #461220;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,7 +145,7 @@ footer {
 }
 
 footer p {
-  color: #f8ffb4;
+  color: #cbc8e6;
   margin: 1em;
 }
 
