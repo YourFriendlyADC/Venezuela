@@ -5,13 +5,6 @@ window.addEventListener('scroll', function() {
 });
 
 // One
-// ScrollReveal().reveal('.mini-header', {
-//   duration: 2000,
-//   distance: '150%',
-//   origin: 'right',
-//   opacity: null
-// });
-
 ScrollReveal().reveal('.title', {
   duration: 2000,
   distance: '150%',

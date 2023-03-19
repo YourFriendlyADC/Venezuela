@@ -44,8 +44,12 @@ header h2 {
   font-weight: 500;
 }
 
-header h1:hover, h2:hover {
+header h1:hover {
   padding: .5em 4em;
+}
+
+header h2:hover {
+  padding: .5em 4.75em;
 }
 
 /* Section */
