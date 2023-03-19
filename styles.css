@@ -2,191 +2,100 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Rowdies', cursive;
-  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #e5e4ee;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #cbc8e6;
   overflow-x: hidden;
 }
 
-h2 { 
-  text-align: center;
-}
-
-i {
-  color: #fff080;
-  font-size: 2.2em;
-  filter: drop-shadow(2px 2px 1px #3D3838);
-  margin-bottom: 5px;
-}
-
-a {
-  color: #570808;
-  text-decoration: none;
-  font-size: 1em;
-}
-
-p {
-  text-align: justify;
-}
-
 header {
-  background-color: #461220;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 100;
-}
-
-header i {
-  color: #cbc8e6;
-}
-
-.logo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 1em;
-}
-
-.logo span {
-  color: #cbc8e6;
-  font-size: 2em;
-  margin: 0 10px;
-}
-
-section {
-  display: flex;
-  flex-direction: row;
-  margin-top: 4em;
-}
-
-.main-column {
-  width: 80%;
-  background-color: #cbc8e6;
-  margin: 1.5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2em;
-  box-shadow: 0 0 5px #3D3838;
-  color: #570808;
-  border-radius: 0.5em;
-}
-
-.music-image {
-  width: 320px;
-  border-radius: 0.5em;
-  margin-bottom: 0.75em;
-  box-shadow: 0 0 5px #3D3838;
-}
-
-.food-image {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.food-image img {
-  width: 300px;
-  margin: 0.625em;
-  border-radius: 0.5em;
-  box-shadow: 0 0 5px #3D3838;
-}
-
-.image {
-  width: 316px;
-  height: 448px;
-  box-shadow: 0 0 6px #3D3838;
-  margin: 1em;
-}
-
-.image img {
+  background-image: url(images/bg.jpg);
   background-size: cover;
+  width: 100%;
+  height: 40em;
 }
 
-.sidebar {
-  width: 15%;
-  background-color: #cbc8e6;
-  margin: 1.5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  box-shadow: 0 0 5px #3D3838;
-  color: #570808;
-  position: fixed;
-  left: 82%;
-  height: 65vh;
-  border-radius: 0.5em;
-}
-
-.sidebar h2 {
-  display: inherit;
-  align-items: center;
-}
-
-.sidebar h2 i {
-  color: #570808;
-  filter: none;
-  font-size: 0.75em;
-  margin-right: 0.3em;
-}
-
-.sidebar li {
-  margin: 0.625em 0;
-}
-
-footer {
-  background-color: #461220;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-footer p {
+header h1 {
+  background-color: #261e6e;
   color: #cbc8e6;
-  margin: 1em;
+  display: inline-block;
+  padding: .5em 3em;
+  font-size: 2.5em;
+  margin-top: 5em;
+  border-radius: 0 .25em .25em 0;
+  transition: .75s;
+  font-weight: 500;
 }
 
-@media only screen and (max-width: 600px) {
-  section {
-    flex-direction: column;
-    align-items: center;
-  }
+header h2 {
+  background-color: #261e6e;
+  color: #cbc8e6;
+  display: inline-block;
+  padding: .5em 3.75em;
+  font-size: 2em;
+  border-radius: 0 .25em .25em 0;
+  transition: .75s;
+  font-weight: 500;
+}
 
-  .main-column {
-    width: auto;
-    order: 1;
-  }
+header h1:hover, h2:hover {
+  padding: .5em 4em;
+}
 
-  .sidebar {
-    position: static;
-    width: 70%;
-    height: auto;
-    margin: 1.5em 1.5em 0;
-  }
+/* Section */
+section .words {
+  margin: 3em 8em;
+  width: 60%;
+}
 
-  .sidebar ul {
-    display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
-    column-gap: 1.5em;
-  }
+section h2 {
+  text-align: justify;
+  font-size: 1.2em;
+  font-weight: 500;
+}
 
-  .image {
-    width: 140px;
-    height: 210px;
-  }
+section h1 {
+  display: inline-block;
+  padding: .5em 3em;
+  background-color: #261e6e;
+  color: #cbc8e6;
+  border-radius: 0 .25em .25em 0;
+}
 
-  .food-image img {
-    width: 80px;
-    margin: 0 0.5em;
-  }
+section .countries {
+  font-size: 1em;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 1em 24em 0;
+}
+
+.countries .c {
+  background-color: #0893ca;
+  color: #cbc8e6;
+  padding: .6em 1.2em;
+  border-radius: .25em;
+  margin: .5em;
+}
+
+.countries .v {
+  background-color: #974aca;
+  color: #cbc8e6;
+  padding: .6em 1.2em;
+  border-radius: .25em;
+  margin: .5em;
+}
+
+section img {
+  margin: 0 13em;
+  display: block;
+  padding: .5em;
+  border-radius: .5em;
 }
